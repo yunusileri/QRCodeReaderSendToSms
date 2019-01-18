@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etPersons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:ignore="InefficientWeight,LabelFor,NestedWeights,UnusedAttribute" />
+
+        <Button
+            android:id="@+id/btnContact"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/person" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/messageShow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            tools:ignore="InefficientWeight,LabelFor,NestedWeights,UnusedAttribute" />
+
+        <LinearLayout
+            android:id="@+id/Liner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="60dp"
+                android:layout_height="56dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/send"
+                tools:ignore="InefficientWeight" />
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="60dp"
+                android:layout_height="56dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/share"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
